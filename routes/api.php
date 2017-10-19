@@ -10,3 +10,4 @@ Route::get('users/{id}', 'UserController@profileById')->middleware('auth:api');
 Route::post('post', 'PostController@add')->middleware('auth:api');
 Route::put('post/{post}', 'PostController@update')->middleware('auth:api');
 Route::delete('post/{post}', 'PostController@delete')->middleware('auth:api');
+Route::post('makanan', 'MakananController@add')->middleware('auth:api');
